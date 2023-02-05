@@ -20,6 +20,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
   z-index: 990;
   width: 23.5rem;
   height: 10.5rem;
@@ -27,15 +28,28 @@
   background-image: url('../img/todoinsert-01.png');
   background-repeat: no-repeat;
   background-size: 100%;
+  
 }
 
 form > input {
-  width: 65%;
+  width: 16rem;
+  height: 20px;
   border: none;
   outline: none;
-  margin-bottom: 3.5rem;
+
+
+  position: fixed;
+  bottom: 31.5rem;
 }
 
 form > button {
   display: none;
+}
+
+.edit {
+}
+
+.rewrite {
+  margin: 4rem 1.5rem 0rem 1.5rem;
+  width: 2.5rem;
 }

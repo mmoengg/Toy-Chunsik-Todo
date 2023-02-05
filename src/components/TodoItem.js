@@ -4,16 +4,17 @@ import yes from "../img/face-yes.png";
 
 import classes from "./TodoItem.module.css";
 
-const TodoItem = ({ todo, onCheckToggle, onChangeSelectedTodo, onInsertToggle }) => {
+const TodoItem = ({ todo, onCheckToggle, onInsertToggle,  onChangeSelectedTodo }) => {
   const { id, text, checked } = todo;
-
+ // onChangeSelectedTodo이 목록에 있는 input 클릭하면 해당하는 text값을 가지고 있음, 화면에 보이진 않음, 클릭 시 객체가 선택 되는 것임
   return (
     <div className={classes.TodoItem}>
       <div className={`${classes.content} ${checked ? classes.checked : ""}`}>
         <div
           className={classes.text}
           onClick={() => {
-            onInsertToggle(todo);
+            onChangeSelectedTodo(todo)
+            onInsertToggle();
           }}
         >
           {text}

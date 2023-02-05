@@ -3,7 +3,7 @@ import TodoItem from "./TodoItem";
 import classes from "./TodoList.module.css";
 import menu from "../img/menu-01.png";
 
-const TodoList = ({ todos, onCheckToggle, onChangeSelectedTodo, onInsertToggle }) => {
+const TodoList = ({ todos, onCheckToggle, onInsertToggle, onChangeSelectedTodo }) => {
   return (
     <div>
       <div className={classes.body}>
@@ -18,8 +18,8 @@ const TodoList = ({ todos, onCheckToggle, onChangeSelectedTodo, onInsertToggle }
                 todo={todo}
                 key={todo.id}
                 onCheckToggle={onCheckToggle}
-                onChangeSelectedTodo={onChangeSelectedTodo}
                 onInsertToggle={onInsertToggle}
+                onChangeSelectedTodo={onChangeSelectedTodo}
               />
             ))}
           </section>
