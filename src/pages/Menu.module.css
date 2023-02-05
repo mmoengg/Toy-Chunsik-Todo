@@ -1,10 +1,24 @@
 .main {
 }
 
+a {
+    text-decoration: none;
+}
+
 .div {
     display: flex;
     justify-content: center;
     align-items: center;
-margin: 0 auto;
-    margin: 2rem;
+    
+    margin: 0 auto;
+    margin: 2.2rem;
+    
+    font-size: 1.3rem;
+    color: #000;
+}
+.div:hover {
+    color: #EB5242;
+}
+.div:active {
+    color: #f57163;
 }

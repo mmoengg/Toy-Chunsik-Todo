@@ -1,0 +1,23 @@
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+form > input {
+    width: 16rem;
+    height: 20px;
+    border: none;
+    outline: none;
+  
+  
+    position: fixed;
+    bottom: 31.5rem;
+}

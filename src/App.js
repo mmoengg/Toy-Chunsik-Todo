@@ -23,6 +23,8 @@ const App = () => {
   // 평소에는 false인 상태의 insert
   const [insertToggle, setInsertToggle] = useState(false);
   const [todos, setTodos] = useState(data);
+  // 이름 받아오기
+  const [name, setName] = useState("민정이");
 
   const onInsertTodo = (text) => {
     const todo = {
@@ -68,10 +70,12 @@ const App = () => {
     );
   };
 
+  // 이름이 바뀔 때마다 받아오기
+
   return (
     <BrowserRouter>
       <div className={classes.main}>
-        <Template todos={todos}>
+        <Template todos={todos} name={name} >
           {insertToggle && (
             <TodoInsert
               selectedTodo={selectedTodo}
@@ -105,7 +109,7 @@ const App = () => {
               />
               <Route path="/card" element={<Card />} />
               <Route path="/menu" element={<Menu />} />
-              <Route path="/my" element={<My />} />
+              <Route path="/my" element={<My setName={setName} />} />
               <Route path="/finish" element={<Finish />} />
               <Route path="/photo" element={<Photo />} />
               <Route path="/editer" element={<Editer />} />
