@@ -1,23 +1,26 @@
 .main {
     display: flex;
     flex-direction: column;
-}
-
-.form {
-    display: flex;
     justify-content: center;
     align-items: center;
-    
-
 }
 
-form > input {
-    width: 16rem;
-    height: 20px;
-    border: none;
+.input {
+    width: 13rem;
+    height: 2.5rem;
     outline: none;
-  
-  
-    position: fixed;
-    bottom: 31.5rem;
+    border: none;
+    padding: 0rem 1rem;
+    background-image: url(../img/todoitem-01.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.main > button {
+    display: none;
+}
+
+.main > img {
+    margin-top: 3rem;
+    width: 6rem;
 }

@@ -109,7 +109,7 @@ const App = () => {
               />
               <Route path="/card" element={<Card />} />
               <Route path="/menu" element={<Menu />} />
-              <Route path="/my" element={<My setName={setName} />} />
+              <Route path="/my" element={<My setName={setName} name={name} />} />
               <Route path="/finish" element={<Finish />} />
               <Route path="/photo" element={<Photo />} />
               <Route path="/editer" element={<Editer />} />

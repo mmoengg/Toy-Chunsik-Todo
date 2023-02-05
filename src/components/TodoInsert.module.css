@@ -33,23 +33,18 @@
 
 form > input {
   width: 16rem;
-  height: 20px;
+  height: 1rem;
   border: none;
   outline: none;
 
-
-  position: fixed;
-  bottom: 31.5rem;
+  margin-top: 3rem;
 }
 
 form > button {
   display: none;
 }
 
-.edit {
-}
-
 .rewrite {
-  margin: 4rem 1.5rem 0rem 1.5rem;
+  margin: 2rem 1.5rem 2rem 1.5rem;
   width: 2.5rem;
 }

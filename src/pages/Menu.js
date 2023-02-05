@@ -10,7 +10,7 @@ const Menu = () => {
     <Card>
       <div className={classes.main}>
         <Link to="/">
-          <div className={classes.div}>🏠 Home</div>
+          <div className={classes.div}>💚 Todo</div>
         </Link>
         <Link to="/my">
           <div className={classes.div}>🥰 My</div>

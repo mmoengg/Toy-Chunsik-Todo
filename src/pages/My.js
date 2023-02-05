@@ -2,10 +2,11 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import classes from "./My.module.css";
-
 import Card from "../components/Card";
 
-const Menu = ({ setName }) => {
+import Fighting from '../img/fighting-01.png'
+
+const Menu = ({ setName, name }) => {
   const [value, setValue] = useState("");
 
   // input이 변경 될 때마다 실행됨
@@ -24,10 +25,11 @@ const Menu = ({ setName }) => {
     }
   };
 
+
   return (
     <Card>
       <div className={classes.main}>
-        <p>안녕? 내 이름은</p>
+        <p>네 이름은 뭐야?</p>
         <input
           className={classes.input}
           placeholder="New Name"
@@ -36,8 +38,8 @@ const Menu = ({ setName }) => {
           onKeyPress={onSubmit}
         ></input>
         <button type="submit" onClick={onSubmit}></button>
-        <p>이야</p>
-        <p>오늘도 힘내!</p>
+        <img src={Fighting} alt="Fighting" />
+        <p>{name}야, 오늘도 힘내!</p>
       </div>
     </Card>
   );
