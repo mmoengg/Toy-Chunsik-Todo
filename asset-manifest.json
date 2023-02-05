@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Toy-Chunsik-Todo/static/css/main.b5219c8e.css",
+    "main.js": "/Toy-Chunsik-Todo/static/js/main.c8d41476.js",
+    "static/media/paper-01.jpg": "/Toy-Chunsik-Todo/static/media/paper-01.aa33108136e828fcd197.jpg",
+    "static/media/me-01.png": "/Toy-Chunsik-Todo/static/media/me-01.d683f9f737d9f9ccc1a4.png",
+    "static/media/body-01.png": "/Toy-Chunsik-Todo/static/media/body-01.58b3df8f266a93992411.png",
+    "static/media/fighting-01.png": "/Toy-Chunsik-Todo/static/media/fighting-01.4d0fd7dc729f3af6999b.png",
+    "static/media/face-yes.png": "/Toy-Chunsik-Todo/static/media/face-yes.9a5297960d6b1e182616.png",
+    "static/media/face-no.png": "/Toy-Chunsik-Todo/static/media/face-no.a239d2a65565dadd2526.png",
+    "static/media/talk-01.png": "/Toy-Chunsik-Todo/static/media/talk-01.9232361498a7564cbe3c.png",
+    "index.html": "/Toy-Chunsik-Todo/index.html",
+    "main.b5219c8e.css.map": "/Toy-Chunsik-Todo/static/css/main.b5219c8e.css.map",
+    "main.c8d41476.js.map": "/Toy-Chunsik-Todo/static/js/main.c8d41476.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b5219c8e.css",
+    "static/js/main.c8d41476.js"
+  ]
+}
