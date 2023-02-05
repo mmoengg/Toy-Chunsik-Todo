@@ -1,16 +1,25 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import TodoItem from "./TodoItem";
 import classes from "./TodoList.module.css";
 import menu from "../img/menu-01.png";
 
-const TodoList = ({ todos, onCheckToggle, onInsertToggle, onChangeSelectedTodo }) => {
+const TodoList = ({
+  todos,
+  onCheckToggle,
+  onInsertToggle,
+  onChangeSelectedTodo,
+}) => {
   return (
     <div>
       <div className={classes.body}>
         <div className={classes.TodoList}>
           <section className={classes.meun}>
             <p>춘식이는 귀여워</p>
-            <img src={menu} className={classes.img} />
+            <Link to="/menu">
+              <img src={menu} className={classes.img} />
+            </Link>
           </section>
           <section className={classes.position}>
             {todos.map((todo) => (

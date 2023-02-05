@@ -3,17 +3,19 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
 
 import classes from "./App.module.css";
-import draw from "./img/draw-01.png";
+import write from "./img/write-01.png";
 
 import data from "./data/data";
 import Template from "./components/Template";
 import TodoInsert from "./components/TodoInsert";
 import TodoList from "./components/TodoList";
 
-import My from './pages/My'
-import Finish from './pages/Finish'
-import Photo from './pages/Photo'
-import Editer from './pages/Editer'
+import Card from "./components/Card";
+import Menu from "./pages/Menu";
+import My from "./pages/My";
+import Finish from "./pages/Finish";
+import Photo from "./pages/Photo";
+import Editer from "./pages/Editer";
 
 const App = () => {
   // todoitem input 글자 받아오는 useState
@@ -80,31 +82,39 @@ const App = () => {
             />
           )}
           <div className={classes.position}>
-            <TodoList
-              todos={todos}
-              onCheckToggle={onCheckToggle}
-              onInsertToggle={onInsertToggle}
-              onChangeSelectedTodo={onChangeSelectedTodo}
-            />
-            <div className={classes.addTodoButton}>
-              <img
-                src={draw}
-                className={classes.img}
-                onClick={onInsertToggle}
+            <Routes>
+              <Route
+                path="/"
+                element={
+                  <>
+                    <TodoList
+                      todos={todos}
+                      onCheckToggle={onCheckToggle}
+                      onInsertToggle={onInsertToggle}
+                      onChangeSelectedTodo={onChangeSelectedTodo}
+                    />
+                    <div className={classes.addTodoButton}>
+                      <img
+                        src={write}
+                        className={classes.img}
+                        onClick={onInsertToggle}
+                      />
+                    </div>
+                  </>
+                }
               />
-            </div>
+              <Route path="/card" element={<Card />} />
+              <Route path="/menu" element={<Menu />} />
+              <Route path="/my" element={<My />} />
+              <Route path="/finish" element={<Finish />} />
+              <Route path="/photo" element={<Photo />} />
+              <Route path="/editer" element={<Editer />} />
+            </Routes>
           </div>
         </Template>
-        <Routes>
-          <Route path="/my" element={<My />} />
-          <Route path="/finish" element={<Finish />} />
-          <Route path="/photo" element={<Photo />} />
-          <Route path="/editer" element={<Editer />} />
-        </Routes>
       </div>
     </BrowserRouter>
   );
 };
 
 export default App;
-
