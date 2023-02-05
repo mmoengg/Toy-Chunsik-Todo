@@ -13,7 +13,6 @@ import TodoList from "./components/TodoList";
 import Card from "./components/Card";
 import Menu from "./pages/Menu";
 import My from "./pages/My";
-import Finish from "./pages/Finish";
 import Photo from "./pages/Photo";
 import Editer from "./pages/Editer";
 
@@ -110,7 +109,6 @@ const App = () => {
               <Route path="/card" element={<Card />} />
               <Route path="/menu" element={<Menu />} />
               <Route path="/my" element={<My setName={setName} name={name} />} />
-              <Route path="/finish" element={<Finish todos={todos} />} />
               <Route path="/photo" element={<Photo />} />
               <Route path="/editer" element={<Editer />} />
             </Routes>

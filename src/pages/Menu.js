@@ -15,9 +15,6 @@ const Menu = () => {
         <Link to="/my">
           <div className={classes.div}>🥰 My</div>
         </Link>
-        <Link to="/finish">
-          <div className={classes.div}>📝 Finish</div>
-        </Link>
         <Link to="/photo">
           <div className={classes.div}>📸 Photo</div>
         </Link>

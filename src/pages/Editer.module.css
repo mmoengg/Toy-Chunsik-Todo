@@ -1,0 +1,26 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.div {
+  margin: 0.5rem 0rem;
+}
+
+.div > p {
+  margin: 0.2rem;
+  font-size: 0.9rem;
+  color: #EB5242;
+}
+
+.div > a {
+  font-size: 0.85rem;
+}
+
+.img {
+  width: 7rem;
+  margin-top: 1.2rem;
+  margin-bottom: 1rem;
+}
