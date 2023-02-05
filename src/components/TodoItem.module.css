@@ -1,0 +1,41 @@
+.TodoItem {
+    width: 85%;
+    background: #fff;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+
+    background-image: url('../img/todoitem-01.png');
+    background-size: 100%;
+}
+
+.content {
+    cursor: pointer;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content svg {
+    font-size: 1.2rem;
+}
+
+.content.checked .text {
+    color: #b5b5b5;
+    text-decoration: line-through;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.content.checked svg {
+    color: #b5b5b5;
+    opacity: 0.6;
+}
+
+.img {
+    width: 1.7rem;
+}

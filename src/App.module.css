@@ -1,0 +1,29 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-image: url(./img/paper-01.jpg);
+  background-position: top center;
+  background-size: 110%;
+}
+
+.position {
+  position: relative;
+}
+
+.addTodoButton {
+  width: 1rem;
+  
+  display: fixed;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.img {
+  width: 5rem;
+}
