@@ -20,7 +20,7 @@ import Editer from "./pages/Editer";
 const App = () => {
   // todoitem input 글자 받아오는 useState
   const [selectedTodo, setSelectedTodo] = useState(null);
-  // 평소에는 false인 상태의 insert
+  // 평소에는 false인 상태의 insert창
   const [insertToggle, setInsertToggle] = useState(false);
   const [todos, setTodos] = useState(data);
   // 이름 받아오기
@@ -32,7 +32,7 @@ const App = () => {
       text,
       checked: false,
     };
-    setTodos((todos) => todos.concat(todo));
+    setTodos((todos) => [todo, ...todos]);
   };
 
   // checked 상태 변경 함수
@@ -110,7 +110,7 @@ const App = () => {
               <Route path="/card" element={<Card />} />
               <Route path="/menu" element={<Menu />} />
               <Route path="/my" element={<My setName={setName} name={name} />} />
-              <Route path="/finish" element={<Finish />} />
+              <Route path="/finish" element={<Finish todos={todos} />} />
               <Route path="/photo" element={<Photo />} />
               <Route path="/editer" element={<Editer />} />
             </Routes>

@@ -11,6 +11,14 @@ const TodoList = ({
   onInsertToggle,
   onChangeSelectedTodo,
 }) => {
+  const filteredTrue = todos.filter((el) => {
+    return el.checked === true ? el.checked : null;
+  });
+
+  const filteredFalse = todos.filter((el) => {
+    return el.checked === false ? !el.checked : null;
+  });
+
   return (
     <div>
       <div className={classes.body}>
@@ -22,7 +30,16 @@ const TodoList = ({
             </Link>
           </section>
           <section className={classes.position}>
-            {todos.map((todo) => (
+            {filteredFalse.map((todo) => (
+              <TodoItem
+                todo={todo}
+                key={todo.id}
+                onCheckToggle={onCheckToggle}
+                onInsertToggle={onInsertToggle}
+                onChangeSelectedTodo={onChangeSelectedTodo}
+              />
+            ))}
+            {filteredTrue.map((todo) => (
               <TodoItem
                 todo={todo}
                 key={todo.id}

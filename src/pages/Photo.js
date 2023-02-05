@@ -5,7 +5,7 @@ import classes from "./Menu.module.css";
 
 import Card from "../components/Card";
 
-const Menu = () => {
+const Photo = () => {
   return (
     <Card>
       <div className={classes.main}>
@@ -14,4 +14,4 @@ const Menu = () => {
   );
 };
 
-export default Menu;
+export default Photo;

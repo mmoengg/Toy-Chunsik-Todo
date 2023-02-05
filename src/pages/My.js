@@ -6,7 +6,7 @@ import Card from "../components/Card";
 
 import Fighting from '../img/fighting-01.png'
 
-const Menu = ({ setName, name }) => {
+const My = ({ setName, name }) => {
   const [value, setValue] = useState("");
 
   // input이 변경 될 때마다 실행됨
@@ -45,4 +45,4 @@ const Menu = ({ setName, name }) => {
   );
 };
 
-export default Menu;
+export default My;
