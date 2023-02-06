@@ -26,7 +26,7 @@ const TodoList = ({
           <section className={classes.meun}>
             <p>춘식이는 귀여워</p>
             <Link to="/menu">
-              <img src={menu} className={classes.img} />
+              <img src={menu} className={classes.img} alt="메뉴 아이콘" />
             </Link>
           </section>
           <section className={classes.position}>

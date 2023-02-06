@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 import classes from "./Photo.module.css";
 
@@ -15,10 +14,10 @@ const Photo = () => {
   return (
     <Card>
       <div className={classes.main}>
-        <img src={write} className={classes.img} />
-        <img src={fighting} className={classes.img} />
-        <img src={faceNo} className={classes.img} />
-        <img src={faceYes} className={classes.img} />
+        <img src={write} className={classes.img} alt='춘식이가 연필 든 모습' />
+        <img src={fighting} className={classes.img} alt='파이팅하는 춘식이' />
+        <img src={faceNo} className={classes.img} alt='기본 표정 춘식' />
+        <img src={faceYes} className={classes.img} alt='하트 표정 춘식' />
       </div>
     </Card>
   );

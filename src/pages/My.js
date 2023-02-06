@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 
 import classes from "./My.module.css";
 import Card from "../components/Card";
 
-import Fighting from '../img/fighting-01.png'
+import Fighting from "../img/fighting-01.png";
 
 const My = ({ setName, name }) => {
   const [value, setValue] = useState("");
@@ -24,7 +23,6 @@ const My = ({ setName, name }) => {
       }
     }
   };
-
 
   return (
     <Card>

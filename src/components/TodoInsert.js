@@ -62,6 +62,7 @@ const TodoInsert = ({
               onClick={() => {
                 onUpdate(selectedTodo.id, value);
               }}
+              alt="체크 표시"
             />
             <img
               src={editDel}
@@ -69,11 +70,12 @@ const TodoInsert = ({
               onClick={() => {
                 onRemove(selectedTodo.id);
               }}
+              alt="엑스 표시"
             />
           </div>
         ) : (
           <>
-            <img src={editRe} className={classes.rewrite} onClick={onSubmit} />
+            <img src={editRe} className={classes.rewrite} onClick={onSubmit} alt="체크 표시" />
             <button type="submit"></button>
           </>
         )}
