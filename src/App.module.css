@@ -2,20 +2,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10%;
-}
-
-.body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
+  height: 100vh;
 }
 
 body {
   background-image: url(./img/paper-01.jpg);
   background-position: top center;
-  background-size: 110%;
+  background-size: 100%;
 }
 
 .position {

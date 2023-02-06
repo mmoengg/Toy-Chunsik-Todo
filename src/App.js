@@ -74,52 +74,50 @@ const App = () => {
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <div className={classes.main}>
-        <div  className={classes.body}>
-          <Template todos={todos} name={name}>
-            {insertToggle && (
-              <TodoInsert
-                selectedTodo={selectedTodo}
-                onInsertTodo={onInsertTodo}
-                onInsertToggle={onInsertToggle}
-                onRemove={onRemove}
-                onUpdate={onUpdate}
-              />
-            )}
-            <div className={classes.position}>
-              <Routes>
-                <Route
-                  path="/"
-                  element={
-                    <>
-                      <TodoList
-                        todos={todos}
-                        onCheckToggle={onCheckToggle}
-                        onInsertToggle={onInsertToggle}
-                        onChangeSelectedTodo={onChangeSelectedTodo}
+        <Template todos={todos} name={name}>
+          {insertToggle && (
+            <TodoInsert
+              selectedTodo={selectedTodo}
+              onInsertTodo={onInsertTodo}
+              onInsertToggle={onInsertToggle}
+              onRemove={onRemove}
+              onUpdate={onUpdate}
+            />
+          )}
+          <div className={classes.position}>
+            <Routes>
+              <Route
+                path="/"
+                element={
+                  <>
+                    <TodoList
+                      todos={todos}
+                      onCheckToggle={onCheckToggle}
+                      onInsertToggle={onInsertToggle}
+                      onChangeSelectedTodo={onChangeSelectedTodo}
+                    />
+                    <div className={classes.addTodoButton}>
+                      <img
+                        src={write}
+                        className={classes.img}
+                        onClick={onInsertToggle}
+                        alt="춘식이가 연필 든 모습"
                       />
-                      <div className={classes.addTodoButton}>
-                        <img
-                          src={write}
-                          className={classes.img}
-                          onClick={onInsertToggle}
-                          alt="춘식이가 연필 든 모습"
-                        />
-                      </div>
-                    </>
-                  }
-                />
-                <Route path="/card" element={<Card />} />
-                <Route path="/menu" element={<Menu />} />
-                <Route
-                  path="/my"
-                  element={<My setName={setName} name={name} />}
-                />
-                <Route path="/photo" element={<Photo />} />
-                <Route path="/editer" element={<Editer />} />
-              </Routes>
-            </div>
-          </Template>
-        </div>
+                    </div>
+                  </>
+                }
+              />
+              <Route path="/card" element={<Card />} />
+              <Route path="/menu" element={<Menu />} />
+              <Route
+                path="/my"
+                element={<My setName={setName} name={name} />}
+              />
+              <Route path="/photo" element={<Photo />} />
+              <Route path="/editer" element={<Editer />} />
+            </Routes>
+          </div>
+        </Template>
       </div>
     </BrowserRouter>
   );
