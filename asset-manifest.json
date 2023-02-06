@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Toy-Chunsik-Todo/static/css/main.803390d3.css",
+    "main.css": "/Toy-Chunsik-Todo/static/css/main.9177bac2.css",
     "main.js": "/Toy-Chunsik-Todo/static/js/main.ac24e924.js",
     "static/media/paper-01.jpg": "/Toy-Chunsik-Todo/static/media/paper-01.aa33108136e828fcd197.jpg",
     "static/media/me-01.png": "/Toy-Chunsik-Todo/static/media/me-01.d683f9f737d9f9ccc1a4.png",
@@ -10,11 +10,11 @@
     "static/media/face-no.png": "/Toy-Chunsik-Todo/static/media/face-no.a239d2a65565dadd2526.png",
     "static/media/talk-01.png": "/Toy-Chunsik-Todo/static/media/talk-01.9232361498a7564cbe3c.png",
     "index.html": "/Toy-Chunsik-Todo/index.html",
-    "main.803390d3.css.map": "/Toy-Chunsik-Todo/static/css/main.803390d3.css.map",
+    "main.9177bac2.css.map": "/Toy-Chunsik-Todo/static/css/main.9177bac2.css.map",
     "main.ac24e924.js.map": "/Toy-Chunsik-Todo/static/js/main.ac24e924.js.map"
   },
   "entrypoints": [
-    "static/css/main.803390d3.css",
+    "static/css/main.9177bac2.css",
     "static/js/main.ac24e924.js"
   ]
 }
