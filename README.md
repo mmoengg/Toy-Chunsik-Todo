@@ -2,6 +2,8 @@
 
 춘식이가 귀여운 바람에 만든 투두 리스트 🥰
 
+학습으로 배운 CRUD를 구현하기 위해 제작되었습니다
+
 ## 배포 링크
 
 https://dding-v.github.io/Toy-Chunsik-Todo
