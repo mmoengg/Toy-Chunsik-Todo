@@ -2,9 +2,13 @@
 
 춘식이가 귀여운 바람에 만든 투두 리스트 🥰
 
-## Link
+## 배포 링크
 
 https://dding-v.github.io/Toy-Chunsik-Todo
+
+## front-end
+
+react, react router
 
 ## Menu
 
