@@ -6,7 +6,7 @@
 
 ## 배포 링크
 
-https://dding-v.github.io/Toy-Chunsik-Todo
+[Link!](https://mmoengg.github.io/Toy-Chunsik-Todo/)
 
 ## front-end
 
